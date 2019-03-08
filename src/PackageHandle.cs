@@ -23,8 +23,7 @@ namespace NugetPackageChecker {
             List<string> lst = new List<string>();
             try {
                 List<PackageFile> all = new List<PackageFile>();
-                List<string> packageFiles = GetPackagesConfigs(this.FolderName);
-                foreach (string file in packageFiles) {
+                foreach (string file in GetPackagesConfigs(this.FolderName)) {
                     all.Add(new PackageFile(file));
                 }
 

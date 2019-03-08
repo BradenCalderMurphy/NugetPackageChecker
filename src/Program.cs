@@ -14,6 +14,8 @@ namespace NugetPackageChecker {
                 PackageHandle handle = new PackageHandle(args[0]);
                 List<string> lst = handle.GetDiscrepancies();
                 lst.ForEach(x => Console.WriteLine(x));
+                Console.WriteLine();
+                Console.WriteLine("Finished.");
             }
             Console.ReadLine();
         }
